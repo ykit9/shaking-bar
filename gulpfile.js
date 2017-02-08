@@ -5,7 +5,6 @@ var gulp = require('gulp'),
 	rename = require('gulp-rename'),	
 	watch = require('gulp-watch'),
 	htmlmin = require('gulp-htmlmin'),
-	notify = require('gulp-notify'),
   	minify = require('gulp-minify'),
 	cssmin = require('gulp-cssmin'),
   	connect = require('gulp-connect'),
@@ -48,12 +47,11 @@ gulp.task('connect', function() {
 });
 
 
-gulp.task('build', ['css','html','jsminify']);
+gulp.task('build', ['css','html']);
 
 gulp.task('watch', function() {
 	gulp.watch('src/css/*.css', ['css'])
 	gulp.watch('src/index.html',['html'])
-  gulp.watch('src/js/*.js',['jsminify'])
 
 });
 

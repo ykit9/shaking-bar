@@ -122,6 +122,16 @@
     -webkit-animation-name: none;
     -moz-animation-name: none
 }
-.shakewrapper{
-    width: 5em;
+.buttonwrapper{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 1em;
+}
+
+#contact-form{
+    display: none;
+    height: 10em;
+    width: 20em;
+    border: 1px solid black;
 }

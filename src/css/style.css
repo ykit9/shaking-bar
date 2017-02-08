@@ -99,3 +99,29 @@
         -webkit-transform: translate(2px, 2px) rotate(0)
     }
 }
+.buttonshake{
+        animation-name: shake;
+        animation-duration: 1s;
+        transform-origin: 50% 50%;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        -moz-animation-name: shake;
+        -moz-animation-duration: 1s;
+        -moz-transform-origin: 50% 50%;
+        -moz-animation-iteration-count: infinite;
+        -moz-animation-timing-function: linear;
+        -webkit-animation-name: shake;
+        -webkit-animation-duration: 1s;
+        -webkit-transform-origin: 50% 50%;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+}
+
+.buttonshake:hover{
+     animation-name: none;
+    -webkit-animation-name: none;
+    -moz-animation-name: none
+}
+.shakewrapper{
+    width: 5em;
+}

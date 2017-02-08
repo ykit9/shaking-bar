@@ -1,4 +1,9 @@
-<!DOCTYPE html><html><head><title>test</title><link rel="stylesheet" href="css/main.min.css"></head><body><div id="shaking-button" class="buttonwrapper"><button onclick="contact_window_show()" class="buttonshake">sometext</button></div><div id="contact-form"><form action=""><p>Contact us</p><input type="text"></form></div><script type="text/javascript">function contact_window_show(argument) {
+<!DOCTYPE html><html><head><title>test</title><link rel="stylesheet" href="css/main.min.css"></head><body><div class="contact"><div id="shaking-button" class="buttonwrapper"><button onclick="contact_window_show()" class="buttonshake">Contact us</button></div><div id="contact-form"><div class="contact-form-header">Contact us: <span class="action-element" onclick="contact_window_hide()">&#10006</span></div><form action="" method="post"><div class="contact-form-inputs"><input class="mailbox" name="useremail" type="email" placeholder="Please type your email..." required="required"><textarea name="textarea" rows="10" placeholder="Type your message..." required="required"></textarea></div><div class="contact-form-submit"><input type="submit" value="Send"></div></form></div></div><script type="text/javascript">function contact_window_show() {
 			document.getElementById('shaking-button').style.display = 'none';
 			document.getElementById('contact-form').style.display = 'block';
+		}
+
+		function contact_window_hide() {
+			document.getElementById('shaking-button').style.display = 'block';
+			document.getElementById('contact-form').style.display = 'none';
 		}</script></body></html>

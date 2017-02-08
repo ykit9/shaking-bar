@@ -1,3 +1,125 @@
+body{
+    background-color: #d4d4d4;
+    font-family: sans-serif;
+}
+
+.contact{
+    position: fixed;
+    bottom: 0;
+    float: left;
+    overflow: auto;
+    padding: 1em;
+}
+
+#contact-form{
+    border-radius: 5px;
+    width: 20em;
+    border: 2px solid orange;
+    background: white;
+}
+
+.contact-form-header{
+    background: orange;
+    padding: 0.5em;
+    font-weight: 700;
+    font-size: 1.5em;
+    color: white;
+}
+
+.contact-form-header .action-element{
+    cursor: pointer;
+    float: right;
+}
+
+.action-element:hover{
+    color: red;
+}
+
+.contact-form-inputs{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    margin: 0.5em;
+}
+
+input[type="email"],textarea {
+  display: block;
+  margin: 0;
+  width: 100%;
+  font-size: 1.4em;
+  appearance: none;
+  box-shadow: none;
+  border-radius: 0.5em;
+}
+
+
+
+.contact-form-inputs input[type="email"], .contact-form-inputs textarea {
+  display: block;
+  margin: 0;
+  width: 100%;
+  font-size: 18px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: 0.5em;
+  padding: 10px;
+  border: solid 5px #c9c9c9;
+  transition: border 0.3s;
+}
+
+.contact-form-submit input[type="submit"]{
+    width: 100%;
+}
+
+.contact-form-inputs input[type="email"]:focus,
+.contact-form-inputs input[type="email"].focus,
+.contact-form-inputs textarea:focus,
+.contact-form-inputs textarea.focus {
+  border: solid 5px orange;
+}
+
+.buttonshake{
+        margin: 5px;
+        background: orange;
+        padding: 0.5em;
+        font-weight: 700;
+        color: white;
+        border-radius: 0.75em;
+        border: none;
+
+        animation-name: shake;
+        animation-duration: 1s;
+        transform-origin: 50% 50%;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        -moz-animation-name: shake;
+        -moz-animation-duration: 1s;
+        -moz-transform-origin: 50% 50%;
+        -moz-animation-iteration-count: infinite;
+        -moz-animation-timing-function: linear;
+        -webkit-animation-name: shake;
+        -webkit-animation-duration: 1s;
+        -webkit-transform-origin: 50% 50%;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+}
+
+.buttonshake:hover{
+    margin: 0;
+    border: 5px solid white;
+    animation-name: none;
+    -webkit-animation-name: none;
+    -moz-animation-name: none
+}
+
+.buttonwrapper{
+    display: none;
+}
+
+
+
+
+
 @keyframes shake {
     0% {
         transform: translate(2px, 1px) rotate(0)
@@ -98,40 +220,4 @@
     90% {
         -webkit-transform: translate(2px, 2px) rotate(0)
     }
-}
-.buttonshake{
-        animation-name: shake;
-        animation-duration: 1s;
-        transform-origin: 50% 50%;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
-        -moz-animation-name: shake;
-        -moz-animation-duration: 1s;
-        -moz-transform-origin: 50% 50%;
-        -moz-animation-iteration-count: infinite;
-        -moz-animation-timing-function: linear;
-        -webkit-animation-name: shake;
-        -webkit-animation-duration: 1s;
-        -webkit-transform-origin: 50% 50%;
-        -webkit-animation-iteration-count: infinite;
-        -webkit-animation-timing-function: linear;
-}
-
-.buttonshake:hover{
-     animation-name: none;
-    -webkit-animation-name: none;
-    -moz-animation-name: none
-}
-.buttonwrapper{
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    padding: 1em;
-}
-
-#contact-form{
-    display: none;
-    height: 10em;
-    width: 20em;
-    border: 1px solid black;
 }

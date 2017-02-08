@@ -52,7 +52,6 @@ gulp.task('build', ['css','html']);
 gulp.task('watch', function() {
 	gulp.watch('src/css/*.css', ['css'])
 	gulp.watch('src/index.html',['html'])
-
 });
 
 
